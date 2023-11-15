@@ -89,7 +89,7 @@ const handleLogin = (event) => {
     login.style.display = 'none'
     chat.style.display = 'flex'
 
-    websocket = new WebSocket('ws://localhost:8080')
+    websocket = new WebSocket('wss://zapzap-backend.onrender.com')
     websocket.onmessage = processMessages
     // websocket.onopen = () => websocket.send(`Usuário ${user.name} entrou no servidor`)
 }
